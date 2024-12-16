@@ -1,0 +1,75 @@
+version: '3.8'
+services:
+  # service_registry:
+  #   build:
+  #     context: ./service_discovery
+  #   container_name: service_registry
+  #   ports:
+  #     - "8761:8761"
+
+  # api_gateway:
+  #   build:
+  #     context: ./api_gateway
+  #   container_name: api_gateway
+  #   ports:
+  #     - "5000:5000"
+  #   depends_on:
+  #     - service_registry
+  #     - postgres
+  #     - redis
+
+  # bank_service:
+  #   build:
+  #     context: ./bank
+  #   container_name: bank_service
+  #   ports:
+  #     - "8086:8086"
+  #   depends_on:
+  #     - service_registry
+  #     - postgres
+  #     - redis
+
+  # account_service:
+  #   build:
+  #     context: ./account
+  #   container_name: account_service
+  #   ports:
+  #     - "8088:8088"
+  #   depends_on:
+  #     - service_registry
+  #     - mongo
+  #     - redis
+
+  # customer_service:
+  #   build:
+  #     context: ./customer
+  #   container_name: customer_service
+  #   ports:
+  #     - "8082:8082"
+  #   depends_on:
+  #     - service_registry
+  #     - postgres
+  #     - redis
+
+  postgres:
+    image: postgres:14-alpine
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: username123
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: bank_database
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"
+
+  redis:
+    image: redis:7.2-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+

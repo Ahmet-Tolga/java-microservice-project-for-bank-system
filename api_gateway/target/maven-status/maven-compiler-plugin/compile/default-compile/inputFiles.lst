@@ -1,0 +1,13 @@
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/ApiGateway.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/config/ApplicationConfig.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/config/SecurityConfig.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/controller/AuthController.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/dto/request/RequestLoginDto.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/dto/request/RequestRegisterDto.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/dto/response/ResponseAuthDto.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/entity/Role.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/entity/User.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/filter/JwtAuthFilter.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/repository/UserRepository.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/service/AuthService.java
+/home/tolgahan/Desktop/java/bank_account/api_gateway/src/main/java/com/bank_account/app/service/JwtService.java
